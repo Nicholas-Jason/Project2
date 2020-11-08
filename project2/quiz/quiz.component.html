@@ -1,0 +1,17 @@
+<h1>Basics of Java Quiz</h1>
+<div>
+    <form #QuestionRef=ngForm (ngSubmit)="tallyScore(QuestionRef.value)">
+    <p>Is float a primitive variable in Java?</p>
+    <input type="text" name="Ans1" ngModel required #Ans1Ref="ngModel"/><br/>
+    <p>True or False: You do not need to import ArrayList</p>
+    <input type="text" name="Ans2" ngModel required #Ans2Ref="ngModel"/><br/>
+    <p>What is the keyword used to create constants?</p>
+    <input type="text" name="Ans3" ngModel required #Ans3Ref="ngModel"/><br/>
+    <p>Is Java Platform Indepedent?</p>
+    <input type="text" name="Ans4" ngModel required #Ans4Ref="ngModel"/><br/>
+    <p>True or False: Java supports multiple constructors</p>
+    <input type="text" name="Ans5" ngModel required #Ans5Ref="ngModel"/><br/>
+    <input type="submit" value="Submit"/>
+    <p>{{message}}</p>
+</form>
+</div>
